@@ -1,5 +1,3 @@
-import 'dart:isolate';
-
 import 'package:e_comarce/presentation/screens/product_screen.dart';
 import 'package:e_comarce/presentation/utils/list_api.dart';
 import 'package:e_comarce/presentation/widgets/category_widget.dart';
@@ -18,8 +16,6 @@ class _SearchViewScreenState extends State<SearchViewScreen> {
   ListApi my = new ListApi();
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height;
-    final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(
@@ -60,7 +56,7 @@ class _SearchViewScreenState extends State<SearchViewScreen> {
                 ),
                 SizedBox(height: 10),
                 SizedBox(
-                  height: screenHeight,
+                  height: MediaQuery.of(context).size.width,
                   child: RecentProduct(),
                 ),
               ],
