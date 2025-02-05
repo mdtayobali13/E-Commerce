@@ -1,4 +1,4 @@
-import 'package:e_comarce/presentation/screens/product_screen.dart';
+import 'package:e_comarce/presentation/screens/spalsh_screen.dart';
 import 'package:flutter/material.dart';
 
 class Ecomarces extends StatefulWidget {
@@ -26,7 +26,7 @@ class _EcomarcesState extends State<Ecomarces> {
           ),
         ),
       ),
-      home: ProductScreen(),
+      home: SplashScreen(),
     );
   }
 }

@@ -53,9 +53,9 @@ class _MainBottomNabBarState extends State<MainBottomNabBar> {
                 ),
               ),
               child: _selectedIndex == 1
-                  ? Icon(Icons.favorite) // Filled icon
+                  ? Icon(Icons.favorite) 
                   : Icon(Icons.favorite_outline_rounded),
-            ), // Unfilled icon
+            ), 
             label: 'WishList',
           ),
           BottomNavigationBarItem(
@@ -67,8 +67,8 @@ class _MainBottomNabBarState extends State<MainBottomNabBar> {
                 ),
               ),
               child: _selectedIndex == 2
-                  ? Icon(Icons.insert_drive_file) // Filled icon
-                  : Icon(Icons.insert_drive_file_outlined), // Unfilled icon
+                  ? Icon(Icons.insert_drive_file) 
+                  : Icon(Icons.insert_drive_file_outlined), 
             ),
             label: 'History',
           ),
